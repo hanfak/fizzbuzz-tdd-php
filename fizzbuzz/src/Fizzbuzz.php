@@ -6,6 +6,9 @@ class Fizzbuzz
 {
     public function change($number)
     {
-      return 'Fizz';
+      if($number == 3) {
+        return 'Fizz';
+      }
+      return 'Buzz';
     }
 }

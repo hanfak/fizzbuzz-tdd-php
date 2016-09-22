@@ -13,10 +13,13 @@ class URLTest extends \PHPUnit_Framework_TestCase
       $this->fizzBuzz = new Fizzbuzz();
     }
 
-    public function testOneReturnFizz()
+    public function test1ReturnFizz()
     {
-      $result = $this->fizzBuzz->change(3);
+      $this->assertEquals('Fizz', $this->fizzBuzz->change(3));
+    }
 
-      $this->assertEquals('Fizz', $result);
+    public function test2ReturnBuzz()
+    {
+      $this->assertEquals('Buzz', $this->fizzBuzz->change(5));
     }
 }
