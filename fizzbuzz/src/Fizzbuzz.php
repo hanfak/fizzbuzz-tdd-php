@@ -6,7 +6,10 @@ class Fizzbuzz
 {
     public function change($number)
     {
-      if($number % 3 === 0) {
+      if($number % 15 === 0) {
+        return 'FizzBuzz';
+      }
+      elseif($number % 3 === 0) {
         return 'Fizz';
       }
       return 'Buzz';
