@@ -12,7 +12,10 @@ class Fizzbuzz
       elseif($this->divisibleBy($number, 3)) {
         return 'Fizz';
       }
-      return 'Buzz';
+      elseif($this->divisibleBy($number, 5)) {
+        return 'Buzz';
+      }
+      return $number;
     }
 
     private function divisibleBy($number, $divisor)
