@@ -34,5 +34,13 @@ class URLTest extends \PHPUnit_Framework_TestCase
       $this->assertEquals(1, $this->fizzBuzz->change(1));
     }
 
+    public function test5RaiseException()
+    {
+      $this->setExpectedException(\InvalidArgumentException::class);
+      $this->fizzBuzz->change(-1);
+
+    }
+
+
 
 }

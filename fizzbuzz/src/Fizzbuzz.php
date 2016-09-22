@@ -6,6 +6,9 @@ class Fizzbuzz
 {
     public function change($number)
     {
+      if($number < 1){
+        throw new \InvalidArgumentException("Input is less than 1");
+      }
       if($this->divisibleBy($number, 15)) {
         return 'FizzBuzz';
       }
